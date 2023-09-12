@@ -6,6 +6,7 @@ This is a solution to the [Memory game challenge on Frontend Mentor](https://www
 
 - [The challenge](#the-challenge)
 - [Screenshot](#screenshot)
+- [Ao vivo](#Live)
 - [Built with](#built-with)
 
 ### The challenge
@@ -22,7 +23,7 @@ Users should be able to:
 
 ![](img/screenshot.png)
 
-### Live Preview
+### Live 
 
 Site [Memory game](https://cauathiago-memory-game.netlify.app/).
 
