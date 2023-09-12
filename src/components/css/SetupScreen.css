@@ -1,0 +1,148 @@
+.setup-popup {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--setup-overlay-bg);
+    transition: 1s ease-out;
+  }
+  .setup-logo-container .logo {
+    height: 40px;
+    width: 122px;
+    margin-top: 80px;
+  }
+  .setup-logo-container .logo-fill {
+    fill: var(--light-text-color);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding: 1.5rem;
+    width: 87.2vw;
+    border-radius: var(--border-radius-small);
+    background-color: var(--light-text-color);
+  }
+  form h2 {
+    font-size: var(--setup-font-size);
+    line-height: var(--setup-line-height);
+    color: var(--medium-text-color);
+  }
+  input[type="radio"] {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+  }
+  input[type="radio"] + label {
+    font-size: var(--label-font-size);
+    line-height: var(--label-line-height);
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 50%;
+    cursor: pointer;
+    text-align: center;
+    border-radius: var(--border-radius-large);
+    color: var(--light-text-color);
+    background-color: var(--menu-selection-button-bg);
+  }
+  input[type="radio"]:checked + label {
+    background-color: var(--menu-selection-button-bg-selected);
+  }
+  input[type="radio"] + label:hover {
+    background-color: var(--menu-selection-button-bg-hover);
+  }
+  form div {
+    display: flex;
+    gap: 11px;
+    margin-bottom: 13px;
+  }
+  form button {
+    font-size: var(--button-font-size);
+    line-height: var(--button-line-height);
+    padding: 13px;
+    color: var(--light-text-color);
+    background-color: var(--primary-button-bg);
+    border-radius: var(--border-radius-large);
+  }
+  form button:hover {
+    background-color: var(--primary-button-bg-hover);
+  }
+  @media screen and (min-width: 700px) {
+    .setup-popup {
+      gap: 7.6vh;
+    }
+    .setup-logo-container .logo {
+      width: 153px;
+      height: 50px;
+      margin-top: 169px;
+    }
+    form {
+      width: 85.15vw;
+      gap: 16px;
+      padding: 56px;
+      border-radius: var(--border-radius-medium);
+    }
+    form div {
+      gap: 30px;
+    }
+    form div:nth-of-type(2) {
+      gap: 21px;
+    }
+    form h2 {
+      font-size: var(--setup-font-size-tablet-dsk);
+      line-height: var(--setup-line-height-dsk);
+    }
+    input[type="radio"] + label {
+      font-size: var(--label-font-size-tablet-dsk);
+      line-height: var(--label-line-height-tablet-dsk);
+      padding: 10px;
+      margin-bottom: 16px;
+    }
+    form button {
+      font-size: var(--button-font-size-tablet-dsk);
+      line-height: var(--button-line-height-tablet-dsk);
+      padding: 15px;
+      border-radius: 35px;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    .setup-popup {
+      overflow-y: scroll;
+    }
+    .setup-logo-container .logo {
+      margin-top: 15vh;
+    }
+    form {
+      width: 45.41vw;
+      max-width: 654px;
+      gap: 16px;
+      padding: 56px;
+    }
+    form div {
+      gap: 30px;
+      margin-bottom: 0px;
+    }
+    form div:nth-of-type(2) {
+      gap: 21px;
+    }
+    form h2 {
+      font-size: var(--setup-font-size-tablet-dsk);
+      line-height: var(--setup-line-height-dsk);
+    }
+    input[type="radio"] + label {
+      font-size: var(--label-font-size-tablet-dsk);
+      line-height: var(--label-line-height-tablet-dsk);
+      padding: 10px;
+    }
+    form button {
+      font-size: var(--button-font-size-tablet-dsk);
+      line-height: var(--button-line-height-tablet-dsk);
+      padding: 15px;
+      border-radius: 35px;
+    }
+  }

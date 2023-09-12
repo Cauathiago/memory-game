@@ -1,0 +1,33 @@
+.logo-fill {
+    fill: #152938;
+  }
+  .visually-hidden {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  
+    white-space: nowrap;
+  }
+  
+  header h1 {
+    height: var(--logo-game-board);
+  }
+  @media screen and (min-width: 700px) {
+    .logo {
+      height: 50px;
+      width: 153px;
+      transform: translateY(15px);
+    }
+    header h1 {
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    .logo {
+      transform: translateY(12px);
+    }
+  }

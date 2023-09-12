@@ -1,0 +1,90 @@
+.menu-button {
+    font-size: var(--button-font-size);
+    line-height: var(--button-line-height);
+    padding: 9px 16px;
+    color: var(--light-text-color);
+    background-color: var(--primary-button-bg);
+  }
+  .menu-button:hover {
+    background-color: var(--primary-button-bg-hover);
+  }
+  .game-control-buttons {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pop-up-overlay-bg);
+  }
+  .menu-card {
+    display: flex;
+    flex-direction: column;
+    width: 87.2vw;
+    padding: 1.5rem;
+    gap: 1rem;
+    border-radius: var(--border-radius-small);
+    background-color: var(--card-bg);
+  }
+  .menu-card button {
+    font-size: var(--button-font-size);
+    line-height: var(--button-line-height);
+    color: var(--medium-dark-text-color);
+    background-color: var(--player-info-bg);
+    padding: 13px;
+  }
+  .menu-card button:nth-child(1) {
+    color: var(--light-text-color);
+    background-color: var(--primary-button-bg);
+  }
+  .menu-card button:hover {
+    color: var(--light-text-color);
+    background-color: var(--menu-selection-button-bg-hover);
+  }
+  .menu-card button:nth-child(1):hover {
+    background-color: var(--primary-button-bg-hover);
+  }
+  .visible {
+    display: flex;
+  }
+  @media screen and (min-width: 650px) {
+    .hide-on-ld {
+      display: none;
+    }
+    .game-control-buttons {
+      position: static;
+      display: flex;
+      background-color: transparent;
+      width: auto;
+      height: auto;
+    }
+    .menu-card {
+      background-color: transparent;
+      flex-direction: row;
+      padding: 0;
+      width: 38vw;
+  
+      height: 52px;
+    }
+    .menu-card button {
+      flex-grow: 3;
+      font-size: 20px;
+      line-height: 25px;
+      padding: 13px;
+    }
+    .menu-card button:nth-child(2) {
+      flex-grow: 2;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    .menu-card {
+      width: 292px;
+    }
+  }
+  @media screen and (min-width: 1500px) {
+    .menu-card {
+      width: 292px;
+    }
+  }

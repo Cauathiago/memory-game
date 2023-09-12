@@ -1,0 +1,29 @@
+.game-token {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: var(--token-font-size);
+    border-radius: 50%;
+    cursor: pointer;
+    color: transparent;
+    background-color: var(--medium-dark-text-color);
+    transition: 0.15s ease-in-out;
+  }
+  .game-token:hover {
+    background-color: var(--menu-selection-button-bg-hover);
+  }
+  .active {
+    color: var(--light-text-color);
+    background-color: var(--primary-button-bg);
+  }
+  .matched {
+    color: var(--light-text-color);
+    background-color: var(--menu-selection-button-bg);
+  }
+  @media screen and (min-width: 700px) {
+    .game-token {
+      font-size: var(--token-font-size-tablet);
+    }
+  }
